@@ -1,0 +1,71 @@
+<template name = "contactView">
+	<div class="panel contact" ng-show="panel.isSelected(3)">
+		<div class="col-sm-9">
+			<h1><span class="yellow">Got a question?</span></h1>
+			<h3>No problem, fill out the form below and we will get back to you! <!-- <br> Check out our <a href ng-click="panel.selectTab(4)"><span class="yellow">Frequently Asked Questions!</span></a>--></h3>
+			{{>contactUsForm}}
+		</div>
+
+		<div class="easyContact col-sm-3">
+			<h2> <span class="yellow">Contact Us</span></h2> <hr>
+			<h3> Phone:</h3> <h4>336.549.5879</h4>
+			<h3> Email:</h3> <h4> <a href="mailto:Wesley.Vance@GearInUp.co?Subject=GearInUp Inquiry" target="_top">Wesley.Vance@GearInUp.co</a></h4>
+			<h3> Address: </h3> <h4> <a href="https://www.google.com/maps/place/2+Research+Park,+Texas+A%26M+University,+1700+Research+Pkwy,+College+Station,+TX+77845/@30.600443,-96.358948,17z/data=!3m1!4b1!4m2!3m1!1s0x8646830725b2b8bb:0x38b70854b3af653b" target="_blank"> 1700 Research Parkway College Station, TX</a></h4><hr>
+		</div>
+	</div>
+</template>
+
+<template name = "contactUsForm">
+	<div class = "contactForm col-sm-11">
+		<form action="" method="POST" class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="inputContactFirstName" class="col-sm-2 control-label">First</label>
+				<div class="col-sm-4">
+					<input type="text" name="inputContactFirstName" class="form-control" id="inputContactFirstName" placeholder="John">
+				</div>
+				<label for="inputContactLastName" class="col-sm-2 control-label">Last</label>
+				<div class="col-sm-4">
+					<input type="text" name="inputContactLastName" class="form-control" id="inputContactLastName" placeholder="Doe">
+				</div>
+			</div>
+
+		  <div class="form-group">
+		    <label for="inputContactEmail" class="col-sm-2 control-label">Email</label>
+		    <div class="col-sm-10">
+		      <input type="email" name="inputContactEmail" class="form-control" id="inputContactEmail" placeholder="John.Doe@GearInUp.co">
+		    </div>
+		  </div>
+
+	  	<div class = "form-group">
+		  	<label for="InquirtyDetails" class ="col-sm-2 control-label">Inquiry</label>
+		  	<div class="col-sm-10">
+		  		<textarea class="form-control" id="inputContactInquiry" placeholder="What's Up?" rows="5" ></textarea>
+		  	</div>
+	  	</div>
+
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button class="submit btn btn-success" id ="submitContactForm" data-toggle="modal">Send Inquiry</button>
+		    </div>
+		  </div>
+		</form>
+	</div>
+
+	<div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="ContactUs" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        	<h1 class="modal-title" id="myModalLabel"><span class="yellow">Thank you for your Inquiry</span></h1>
+	      </div>
+	      <div class="modal-body">
+	        <h3><span class="yellow"> Your message has been recieved!</span> We will get back to you, as soon as possible!</h3>
+	        <h3>If you need immediate assistance, please call or text at: 336.549.5879</h3>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	  	</div>
+		</div>
+	</div>
+</template>

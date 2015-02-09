@@ -1,0 +1,60 @@
+<template name="displayProducts">
+	<ul class="list-group">
+		<li class= "list-group-item" ng-repeat="product in store.products">
+		 	<div class= "display-image">
+				<img ng-src="[[product.images[0].full]]" class="img-rounded"/>
+			</div>
+			<hr>
+			<div class="productTitle">
+     		<h2>[[product.name]] </h2>
+    	</div>
+    	
+    	<div class="itemDetails">
+    	<section ng-controller="PanelController as panel"> 
+				<ul class="nav nav-pills black itemDetailsNav">
+				  <li ng-class="{active: panel.isSelected(1) }"> 
+				  	<a href ng-click="panel.selectTab(1)">Description </a>
+				  </li>
+				  <li ng-class="{active:panel.isSelected(2)}"> 
+				  	<a href ng-click="panel.selectTab(2)">Price</a>
+				  </li>
+				  <!-- <li ng-class="{active:panel.isSelected(3)}"> 
+				  	<a href ng-click="panel.selectTab(3)">Reviews</a>
+			  	</li> -->
+			  </ul>
+				<div class="panel description" ng-show="panel.isSelected(1)">
+	      	<p>[[product.description]]</p>
+      	</div>
+
+    		<div class="panel priceTable" ng-show="panel.isSelected(2)">
+    			<table class = "center">
+						<tr>
+					    <th>Length</th>
+					    <th>Price</th>
+					  </tr>
+    				<tr class="data" ng-repeat=" price in product.prices">
+    					<td> [[price.days]]</td>
+    					<td> $[[price.ammount]]</td>
+    				</tr>
+    			</table>
+	    		<h6> *Custom lengths are also possible</h6>
+    		</div>
+
+      	<div class="panel reviews" ng-show="panel.isSelected(3)">
+      		<!-- Old Reviews Display -->
+      		<blockquote ng-repeat="review in product.reviews">
+      			<strong> [[review.stars]] Stars</strong>
+      			[[review.body]]
+      			<cite class="clearfix"> — [[review.author]] <br> [[review.createdOn | date]]</cite>
+      		</blockquote>
+     		</div>
+     	</section>
+     	</div>
+
+    	<button class="btn btn-success checkoutButtons" data-toggle="modal" data-target="#submitProductModal" ng-show = "product.canPurchase" > 
+    		<span class="glyphicon glyphicon-shopping-cart"></span>
+    			Add to Cart  
+    	</button><hr>
+		</li>
+	</ul>
+</template>

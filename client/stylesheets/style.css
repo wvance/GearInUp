@@ -1,0 +1,235 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
+
+@media (max-width: 768px) { 
+    video#bgvid {
+		display: none;
+	}
+	html, body{
+		background: url("resources/background/mtns.jpg");
+		background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top left;
+    background-size: cover; 
+	}
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+html,
+body{
+	padding-top:30px;
+	background-color: rgba(0,0,0,.6);
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+h1 , h2, h3{
+	font-family: 'Cabin Sketch', cursive;
+}
+h1{
+	font-size: 42px;
+}
+h2{
+	font-size: 35px;
+}
+h3{
+	font-size: 26px
+}
+p{
+	font-size: 16px;
+}
+.lead{
+	font-size: 23px;
+}
+
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+  text-align: center;
+}
+
+.mastfoot a{
+	color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*
+ * Globals
+ */
+video#bgvid {
+	position: fixed; left: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background-size: cover;
+}
+
+.row{
+	margin-right: auto;
+	margin-left: -20px; 
+	color:rgb(211,211,211);
+}
+#checkout{
+  	overflow-y: auto;
+  	width: 100%; 
+	background-color: rgba(0,0,0,.0);
+}
+#confirm{
+  	width: 100%; 
+  	z-index: 1;
+	background-color: rgba(0,0,0,.0);
+}
+.list-group-item{
+	background-color: rgba(0,0,0,.5);
+	border-color: rgba(0,0,0,.5);
+	border-radius: 0px;
+}
+.panel{
+	background-color: rgba(0,0,0,.0);
+}
+.itemDetails{
+	text-align: left;
+}
+.black a:hover {
+  color: black;
+}
+.easyContact{
+	text-align: left;
+	padding-top:2%;
+}
+.welcome{
+	padding-top:10px;
+	height: 100vh;
+}
+.jumbotron{
+	background-color: none;
+}
+.contact{
+	padding-top:10px;
+	height: 100vh;
+}
+/* Padding for spacing */
+.inner {
+  padding: 5px;
+}
+.ng-invalid.ng-dirty{
+	border-color:red;
+}
+.ng-valid.ng-dirty{
+	border-color:green;
+	color:green;
+}
+.list-group.form-group{
+	color:green;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table.center{
+	margin-right: auto;
+	margin-left: auto;
+}
+.paymentInfo{
+	text-align: left;
+}
+.priceTable{
+	width:100%;
+	padding-top: 10px;
+	text-align: center;
+}
+.priceTable.table, th, td {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 30px;
+	padding-right:30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.priceTable.table, tr:nth-child(even) {
+	background-color: #1C1C1C;
+}
+.priceTable.table, tr.data:hover{
+	color:black;
+	background-color: white;
+}
+span.yellow {
+	color:yellow;
+} 
+button.checkoutButtons{
+	width:100%;
+	text-align: center;
+}
+#submitCheckout{
+	width:80%;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+#login-buttons a{
+	color:black;
+}
+.modal-content{
+	background-color: rgba(0,0,0,.7);
+}
+#closeModal{
+	width:80%;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+.itemDetailsNav{
+	padding-top:10px;
+	margin-bottom: 10px;
+}
+.productTitle{
+	text-align: left;
+}
+
+.display-image{
+	text-align: center;
+}
+.contactForm{
+	padding-top: 10px;
+}
+.submit{
+	width:100%;
+}
+.stockStatus{
+	background-color: rgba(0,0,0,.5);
+	border-color: rgba(0,0,0,.5);
+	border-radius: 0px;
+}
+.faqView{
+	text-align:left;
+	padding-left: 50px;
+}

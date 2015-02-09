@@ -1,0 +1,55 @@
+<template name="userInfo">
+	<ul class="nav pull-left">
+		{{#if currentUser}}
+	  	{{> userLoggedin}}
+	  {{else}}
+	  	{{> userLoggedout}}
+	  {{/if}}
+	</ul>
+</template>
+
+<template name="userLoggedin">
+	{{#if loggingIn}}
+		<li><a>Logging In...</a></li>
+	{{else}}
+
+		<img class="img-rounded profileThumb" src="{{currentUser.profile.avatar_url}}"/>
+
+		<div class="btn-group userLogon">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			{{currentUser.profile.login}} <span class="caret"></span> 
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a>Account Settings</a></li>
+				<li class="divider"></li>
+				<li><a id="logout">Logout</a></li>
+			</ul>
+		</div>
+	{{/if}}
+</template>
+
+<template	name="userLoggedout">
+	<div class = "userLogon">
+		<button type="button" class="btn btn-default" id="facebookLogin"> 
+			Login
+		</button>
+	</div>
+</template>
+
+
+<template name="userProfile">
+		<div class = "userProfile col-lg-8">
+			<h1><b>{{currentUser.profile.name}}</b></h1>
+			<h4>{{currentUser.profile.email}}</h4>
+			<h6>{{currentUser.profile.login}}</h6>
+			<hr>
+			<h4>{{currentUser.profile.company}}</h4>
+			<h4>{{currentUser.profile.location}}</h4>
+			<h4>{{currentUser.profile.bio}}</h4>
+
+		</div>
+
+		<div class="col-lg-4">
+			<img class = "profilePicture img-circle" src="{{currentUser.profile.avatar_url}}"/>
+		</div>
+</template>

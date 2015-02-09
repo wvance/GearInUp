@@ -1,0 +1,29 @@
+<template name ="videoBackground">
+	<div id="videoBackground">
+		<video controls muted autoplay loop id="bgvid">
+			<source id='mp4Source' type="video/mp4" />
+		</video>
+
+		<script>
+	      var player = document.getElementById('bgvid');
+	      var mp4Vid = document.getElementById('mp4Source');
+
+	      var videos = [
+					'resources/videos/kayak.mp4'
+				]
+				var photos = [
+					'resources/kayak.png'				]
+
+				var index = Math.floor(Math.random() * videos.length);
+				var videoPath = videos[index];
+				var imagePath = photos[index];
+
+				mp4Vid.setAttribute('poster', imagePath);
+				player.setAttribute('src', videoPath);
+
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				 player.setAttribute('src', " ");
+				}
+	  </script>
+  </div>
+</template>

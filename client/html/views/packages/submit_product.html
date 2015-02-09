@@ -1,0 +1,133 @@
+<template name ="submitProduct">
+	<div class="modal fade" id="submitProductModal" tabindex="-1" role="dialog" aria-labelledby="Submit Product" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h3 class="modal-title" id="myModalLabel"> Thanks for your interest! Please fill out this form and we will get you set up for your <span class="yellow">adventure!</span></h3>
+	      </div>
+	      <div class="modal-body">
+
+					<form action="" method="POST" class="form-horizontal" role="form">
+						<div class="form-group">
+							<label for="inputFirstName" class="col-sm-2 control-label">First</label>
+							<div class="col-sm-4">
+								<input type="text" name="inputFirstName" class="form-control" id="inputFirstName" placeholder="John">
+							</div>
+							<label for="inputLastName" class="col-sm-2 control-label">Last</label>
+							<div class="col-sm-4">
+								<input type="text" name="inputLastName" class="form-control" id="inputLastName" placeholder="Doe">
+							</div>
+						</div>
+
+					  <div class="form-group">
+					    <label for="inputPhone" class="col-sm-2 control-label">Phone</label>
+					    <div class="col-sm-10">
+					      <input type="text" name="inputPhoneNumber" class="form-control" id="inputPhoneNumber" placeholder="(123) 456-789">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="John.Doe@GearInUp.co">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+					    <div class="col-sm-10">
+					      <input type="text" name="inputAddress" class="form-control" id="inputAddress" placeholder="1234 Main Road, College Station TX">
+					    </div>
+					  </div>
+
+
+						<div class="form-group">
+						  <label for="inputPackage" class="col-sm-2 control-label">Package</label>
+						  <div class="col-sm-10">
+							  <select name="inputPackage" class="form-control">
+							  	<option>None</option>
+								  <option ng-repeat="product in store.products">[[product.name]]</option>
+								  <option>Other (Please Specify in Detials)</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+						  <label for="inputPackage" class="col-sm-2 control-label">Accessories</label>
+						  <div class="col-sm-10">
+							  <select name="inputAccessories" class="form-control">
+							  	<option>None</option>
+								  <option ng-repeat="accessories in store.accessories">[[accessories.name]]</option>
+								  <option>Other (Please Specify in Detials)</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+						  <label for="inputLength" class="col-sm-2 control-label">Length</label>
+						  <div class="col-sm-10">
+							  <select name="inputLength" class="form-control">
+								  <option>1 Day</option>
+								  <option>3 Days</option>
+								  <option>5 Days</option>
+								  <option>7 Days</option>
+								  <option>14 Days</option>
+								  <option>30 Days</option>
+								  <option>Other (Please Specify in Detials)</option>
+								</select>
+							</div>
+						</div>
+
+				  	<div class = "form-group">
+					  	<label for="AdditionalDetails" class ="col-sm-2 control-label">Trip Details</label>
+					  	<div class="col-sm-10">
+					  		<textarea class="form-control" id="inputTripDetails" placeholder="Tell us some detials about your trip! This will help ensure you're getting the best package for your adventure!" rows="4" ></textarea>
+					  	</div>
+				  	</div>
+
+						<!-- <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <div class="checkbox pull-left">
+					        <label>
+					          <input type="checkbox"> Accept Terms & Conditions
+					        </label>
+					      </div>
+					    </div>
+					  </div> -->
+
+					  <div class="form-group">
+					  	<div class="col-md-6">
+					  		<button type="button" class="btn btn-lg btn-danger" id ="closeModal" data-dismiss="modal">Close</button>
+					  	</div>
+					    <div class="col-md-6">
+					      <button button type="submit" class="btn btn-lg btn-success" id ="submitCheckout">Submit</button>
+					    </div>
+					  </div>
+					</form>
+
+				</div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal fade" id="thankyouModal" tabindex="-1" role="dialog" aria-labelledby="ThankYou" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        	<h1 class="modal-title" id="myModalLabel"><span class="yellow">Thank you for your Order</span></h1>
+	      </div>
+	      <div class="modal-body">
+	        <h3>Your form has been recieved!<span class="yellow"> We will contact you</span>, to follow up on your order, as soon as possible!</h3>
+	        <h3>If you have any questions feel free to: <a href ng-click="panel.selectTab(3)"><span class="yellow"> Contact Us </span></a></h3>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	  	</div>
+		</div>
+	</div>
+
+</template>

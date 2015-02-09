@@ -1,0 +1,51 @@
+<template name = "displayAccessories">
+	<ul class="list-group">
+		<li class= "list-group-item" ng-repeat="accessories in store.accessories">
+			<div class="productTitle">
+     		<h2>[[accessories.name]] </h2>
+    	</div>
+    	
+    	<div class="itemDetails">
+	    	<section ng-controller="PanelController as itemPanel"> 
+					<ul class="nav nav-pills btn-sm black itemDetailsNav">
+					  <li ng-class="{active: itemPanel.isSelected(1) }"> 
+					  	<a href ng-click="itemPanel.selectTab(1)">Description </a>
+					  </li>
+					  <li ng-class="{active:itemPanel.isSelected(2)}"> 
+					  	<a href ng-click="itemPanel.selectTab(2)">Image</a>
+					  </li>
+					  <li ng-class="{active:itemPanel.isSelected(3)}">
+					  	<a href ng-click="itemPanel.selectTab(3)">Price</a>
+					  </li>
+				  </ul>
+					<div class="panel description" ng-show="itemPanel.isSelected(1)">
+		      	<p>[[accessories.description]]</p>
+	      	</div>
+
+					<div class= "panel display-image" ng-show="itemPanel.isSelected(2)">
+						<img ng-src="[[accessories.images[0].full]]" class="img-rounded"/>
+					</div>
+
+	    		<div class="panel priceTable" ng-show="itemPanel.isSelected(3)">
+	    			<table class = "center">
+							<tr>
+						    <th>Length</th>
+						    <th>Price</th>
+						  </tr>
+	    				<tr class="data" ng-repeat=" price in accessories.prices">
+	    					<td> [[price.days]]</td>
+	    					<td> $[[price.ammount]]</td>
+	    				</tr>
+	    			</table>
+		    		<h6> *Custom lengths are also possible</h6>
+	    		</div>
+	     	</section>
+     	</div>
+
+    	<button class="btn btn-success btn-sm checkoutButtons" data-toggle="modal" data-target="#submitProductModal" ng-show = "accessories.canPurchase" > 
+    		<span class="glyphicon glyphicon-shopping-cart"></span>
+    			Add to Cart 
+    	</button><hr>
+		</li>
+	</ul>
+</template>
