@@ -224,6 +224,8 @@ button.checkoutButtons{
 }
 
 /*Prevents Body-Scrolling when Modal is open.*/
-body.modal-open {
+ body.modal-open {
     overflow: hidden;
+    /*position:fixed;*/
+    width: 100%;
 }
