@@ -222,3 +222,8 @@ button.checkoutButtons{
 	text-align:left;
 	padding-left: 50px;
 }
+
+/*Prevents Body-Scrolling when Modal is open.*/
+body.modal-open {
+    overflow: hidden;
+}
