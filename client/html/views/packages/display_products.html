@@ -39,8 +39,12 @@
   					  </tr>
       				<tr class="data" ng-repeat=" price in product.prices">
       					<td> [[price.days]]</td>
-      					<td> $[[price.ammount]]</td>
+      					<td><span class="yellow"> $[[price.ammount]]</span></td>
       				</tr>
+              <tr class>
+                <td>Retail Cost</td>
+                <td>$[[product.fullPrice]]</td>
+              </tr>
       			</table>
   	    		<h6> *Custom lengths are also possible</h6>
       		</div>

@@ -51,6 +51,7 @@ if (Meteor.isClient){
   { 
   	name: 'GoPro HERO3: Black Edition',  
   	description: "Wearable and gear mountable, waterproof to 197' (60m), capable of capturing ultra-wide 1440p 48fps, 1080p 60 fps and 720p 120 fps video and 12MP photos at a rate of 30 photos per second, the HERO3: Black Edition is the world's most versatile camera.",
+  	fullPrice: 400,
   	canPurchase: true,
   	soldOut: false,
   	images: [
@@ -95,6 +96,7 @@ if (Meteor.isClient){
   {
   	name: 'GoPro HERO3: Silver Edition',
   	description: "HERO3 Silver captures gorgeous, professional-quality 1080p60 video and 10MP photos at speeds of up to 10 frames per second. Built-in Wi-Fi enables you to use the GoPro App to control the camera remotely, preview shots and share your favorites on Facebook, Twitter and more.",
+  	fullPrice: 300,
   	canPurchase:true,
   	soldOut:false,
   	images: [
@@ -139,6 +141,7 @@ if (Meteor.isClient){
   {
   	name: 'GoPro HD HERO2',
   	description: "The GoPro HD HERO2 is waterproof to 197' (60M) and boasting an immersive 170° wide-angle lens, the HD HERO2 has ushered in a new era of image capture. Professional quality 30 fps 1080p and 60 fps 720p video, combined with 11 megapixel still photo capture.",
+  	fullPrice: 380,  	
   	canPurchase:true,
   	soldOut:false,
   	images: [
@@ -186,6 +189,7 @@ var accessories = [
   {
   	name: 'GoPro HERO3 Battery',
   	description: "Use this rechargeable battery as a spare, replacement or back-up battery for your GoPro HERO3. Provides approximately up to 2.5 hours of recording time.",
+  	fullPrice: 20,  	
   	canPurchase:true,
   	soldOut:false,
   	images: [
@@ -218,6 +222,7 @@ var accessories = [
   {
   	name: 'GoPro HERO2 Battery',
   	description: "Use this rechargeable battery as a spare, replacement or back-up battery for your GoPro HERO2. Provides approximately up to 2.5 hours of recording time.",
+  	fullPrice: 15,  	
   	canPurchase:true,
   	soldOut:false,
   	images: [
@@ -250,6 +255,7 @@ var accessories = [
   { 
   	name: 'Touch Screen BacPac',  
   	description: "The LCD Touch BacPac is a removable touch display that seamlessly attaches to the back of your GoPro. See what your camera sees to frame your shots with confidence.",
+  	fullPrice: 80,  	
   	canPurchase: true,
   	soldOut: false,
   	images: [
@@ -282,6 +288,7 @@ var accessories = [
   {
   	name: 'GoPro External Battery BacPac',
   	description: "Use this BacPac as an exteranl battery, doubling the time you can record your adventure.",
+  	fullPrice: 50,  	  	
   	canPurchase:true,
   	soldOut:false,
   	images: [
@@ -314,6 +321,7 @@ var accessories = [
   {
   	name: 'GoPro WiFi BacPac',
   	description: "The Wi-Fi BacPac attaches to the back of your GoPro to enable Wi-Fi connectivity and long-range remote control from up to 600'. Enables your HD HERO2 camera to connect to the free GoPro App for remote camera control and content preview on your smartphone or tablet",
+   	fullPrice: 80,  	
   	canPurchase:true,
   	soldOut:false,
   	images: [
