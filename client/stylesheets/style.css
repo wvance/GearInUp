@@ -1,18 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
 
-@media (max-width: 768px) { 
-    video#bgvid {
-		display: none;
-	}
-	html, body{
-		background: url("resources/background/mtns.jpg");
-		background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top left;
-    background-size: cover; 
-	}
-}
-
 a,
 a:focus,
 a:hover {
@@ -129,6 +116,7 @@ video#bgvid {
 .inner {
   padding: 5px;
 }
+/*This is for the form Valid/Invalidation*/
 .ng-invalid.ng-dirty{
 	border-color:red;
 }
@@ -136,6 +124,7 @@ video#bgvid {
 	border-color:green;
 	color:green;
 }
+
 .list-group.form-group{
 	color:green;
 }

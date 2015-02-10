@@ -5,19 +5,33 @@ if (Meteor.isClient){
 		angular.bootstrap(document, ['gearinup']);
 	});
 
+	app.controller("ReviewController", function(){
+		this.review = {};
+		this.addReview = function(product){
+			product.reviews.push(this.review);
+			this.review={};
+		};
+		this.review.createdOn = Date.now();
+	});
+
 	app.controller("StoreController", function(){
     	this.products=cameras;
     	this.accessories=accessories;
   	});
 
-  	app.controller("ReviewController",function(){
-	  	this.review={};
-	  	this.addReview=function(product){
-	    	product.reviews.push(this.review);
-	    	this.review={};
-	    };
-	    this.review.createdOn = Date.now();
- 	 });
+	// app.controller('StoreController', ['$http', function($http){
+ //    var store = this;
+ //    store.products = [];
+ //    $http.get('./store-products.json').success(function(data){
+ //        store.products = data;
+ //        console.log("Success")
+ //        console.log(store.products);
+ //    })
+ //    .error(function (err){
+	// 		alert(err);
+	// 		console.log("Error Loading .JSON");
+	// 	});
+ //  }]);
 
   app.controller("PanelController", function(){
     this.tab=1;
@@ -31,7 +45,8 @@ if (Meteor.isClient){
     };
 
   });
-	
+
+
   var cameras = [
   { 
   	name: 'GoPro HERO3: Black Edition',  
@@ -165,9 +180,9 @@ if (Meteor.isClient){
 	  		ammount: 55
 	  	}]
   }
-  ];
+];
 
-  var accessories = [
+var accessories = [
   {
   	name: 'GoPro HERO3 Battery',
   	description: "Use this rechargeable battery as a spare, replacement or back-up battery for your GoPro HERO3. Provides approximately up to 2.5 hours of recording time.",
@@ -327,7 +342,7 @@ if (Meteor.isClient){
 	  		days: "30 Days",
 	  		ammount: 25
 	  	}]
-  }
+  	}
   ];
 }
 

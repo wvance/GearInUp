@@ -2,53 +2,79 @@
 	<ul class="list-group">
 		<li class= "list-group-item" ng-repeat="product in store.products">
 		 	<div class= "display-image">
-				<img ng-src="[[product.images[0].full]]" class="img-rounded"/>
+
+        <!-- {{> products_carousel}} -->
+        <div class="item"> <img ng-src="[[product.images[0].full]]" class="img-rounded"/></div>
+        <!-- <div class="item"> <img ng-src="[[product.images[1].full]]" class="img-rounded"/></div> -->
 			</div>
+      
 			<hr>
 			<div class="productTitle">
      		<h2>[[product.name]] </h2>
     	</div>
     	
     	<div class="itemDetails">
-    	<section ng-controller="PanelController as panel"> 
-				<ul class="nav nav-pills black itemDetailsNav">
-				  <li ng-class="{active: panel.isSelected(1) }"> 
-				  	<a href ng-click="panel.selectTab(1)">Description </a>
-				  </li>
-				  <li ng-class="{active:panel.isSelected(2)}"> 
-				  	<a href ng-click="panel.selectTab(2)">Price</a>
-				  </li>
-				  <!-- <li ng-class="{active:panel.isSelected(3)}"> 
-				  	<a href ng-click="panel.selectTab(3)">Reviews</a>
-			  	</li> -->
-			  </ul>
-				<div class="panel description" ng-show="panel.isSelected(1)">
-	      	<p>[[product.description]]</p>
-      	</div>
+      	<section ng-controller="PanelController as panel"> 
+  				<ul class="nav nav-pills black itemDetailsNav">
+  				  <li ng-class="{active: panel.isSelected(1) }"> 
+  				  	<a href ng-click="panel.selectTab(1)">Description </a>
+  				  </li>
+  				  <li ng-class="{active:panel.isSelected(2)}"> 
+  				  	<a href ng-click="panel.selectTab(2)">Price</a>
+  				  </li>
+  				  <!-- <li ng-class="{active:panel.isSelected(3)}"> 
+  				  	<a href ng-click="panel.selectTab(3)">Reviews</a>
+  			  	</li> -->
+  			  </ul>
 
-    		<div class="panel priceTable" ng-show="panel.isSelected(2)">
-    			<table class = "center">
-						<tr>
-					    <th>Length</th>
-					    <th>Price</th>
-					  </tr>
-    				<tr class="data" ng-repeat=" price in product.prices">
-    					<td> [[price.days]]</td>
-    					<td> $[[price.ammount]]</td>
-    				</tr>
-    			</table>
-	    		<h6> *Custom lengths are also possible</h6>
-    		</div>
+          <div class="panel description" ng-show="panel.isSelected(1)">
+            <p>[[product.description]]</p>
+          </div>
+          
+      		<div class="panel priceTable" ng-show="panel.isSelected(2)">
+      			<table class = "center">
+  						<tr>
+  					    <th>Length</th>
+  					    <th>Price</th>
+  					  </tr>
+      				<tr class="data" ng-repeat=" price in product.prices">
+      					<td> [[price.days]]</td>
+      					<td> $[[price.ammount]]</td>
+      				</tr>
+      			</table>
+  	    		<h6> *Custom lengths are also possible</h6>
+      		</div>
 
-      	<div class="panel reviews" ng-show="panel.isSelected(3)">
-      		<!-- Old Reviews Display -->
-      		<blockquote ng-repeat="review in product.reviews">
-      			<strong> [[review.stars]] Stars</strong>
-      			[[review.body]]
-      			<cite class="clearfix"> — [[review.author]] <br> [[review.createdOn | date]]</cite>
-      		</blockquote>
-     		</div>
-     	</section>
+        	<div class="panel reviews" ng-show="panel.isSelected(3)">
+        		<!-- Old Reviews Display -->
+        		<blockquote ng-repeat="review in product.reviews">
+        			<strong> [[review.stars]] Stars : </strong>
+        			[[review.body]]
+        			<cite class="clearfix"> — [[review.author]] <br> <!-- [[review.createdOn | date]] --></cite>
+        		</blockquote>
+            <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
+
+              <blockquote>
+                <b>[[reviewCtrl.review.stars]] Stars : </b>
+                [[reviewCtrl.review.body]]
+                <cite>[[reviewCtrl.review.author]]</cite>
+              </blockquote>
+
+              <select ng-model="reviewCtrl.review.stars" required>
+                <option value="1">1 Star</option>
+                <option value="1">2 Star</option>
+                <option value="2">3 Star</option>
+                <option value="4">4 Star</option>
+                <option value="5">5 Star</option>
+              </select>
+
+              <textarea ng-model="reviewCtrl.review.body" required></textarea>
+              <label>By:</label>
+              <input ng-model="reviewCtrl.review.author" type="email" required/>
+              <input type="submit" value="submit"/>
+            </form>
+       		</div>
+       	</section>
      	</div>
 
     	<button class="btn btn-success checkoutButtons" data-toggle="modal" data-target="#submitProductModal" ng-show = "product.canPurchase" > 

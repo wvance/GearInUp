@@ -1,0 +1,479 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "b76a8cb91a6b80f5590c24be702247ad061bcc32.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/b76a8cb91a6b80f5590c24be702247ad061bcc32.js",
+      "size": 617941,
+      "hash": "b76a8cb91a6b80f5590c24be702247ad061bcc32"
+    },
+    {
+      "path": "613f83396757ca516751af404ae86f9a89957b4c.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/613f83396757ca516751af404ae86f9a89957b4c.css?meteor_css_resource=true",
+      "size": 124816,
+      "hash": "613f83396757ca516751af404ae86f9a89957b4c"
+    },
+    {
+      "path": "packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "size": 20335,
+      "hash": "f3a9a3b609133c3d21d6b42abbf7f43bd111df72"
+    },
+    {
+      "path": "packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "size": 41280,
+      "hash": "aafafdc09404c4aa4447d7e898a2183def9cc1b1"
+    },
+    {
+      "path": "packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "size": 62926,
+      "hash": "66b1fc67e37d01ee45ca75c4eefb144d2dbe98fa"
+    },
+    {
+      "path": "packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/mizzao_bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "size": 23320,
+      "hash": "22037a3455914e5662fa51a596677bdb329e2c5c"
+    },
+    {
+      "path": "app/favicons/android-chrome-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-144x144.png",
+      "size": 11446,
+      "hash": "1a127e7ed0b6a0b59aaf561ef27bbd6ead84d33d"
+    },
+    {
+      "path": "app/favicons/android-chrome-192x192.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-192x192.png",
+      "size": 16199,
+      "hash": "5ab30b9002c656d3a770c8c2f718012921dca7a5"
+    },
+    {
+      "path": "app/favicons/android-chrome-36x36.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-36x36.png",
+      "size": 1831,
+      "hash": "14fc9b0e1f64aed7ba2762ffbcef2e5da610d753"
+    },
+    {
+      "path": "app/favicons/android-chrome-48x48.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-48x48.png",
+      "size": 2622,
+      "hash": "4df48a34b675fd828c8c6b9baa2afc3b4baf0b96"
+    },
+    {
+      "path": "app/favicons/android-chrome-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-72x72.png",
+      "size": 4522,
+      "hash": "0f65c199585ed6eadf1fcafe15e4f49abd9812c6"
+    },
+    {
+      "path": "app/favicons/android-chrome-96x96.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/android-chrome-96x96.png",
+      "size": 6812,
+      "hash": "8f7f28e07cfb21e6ffaa6c902527aa85a08c732d"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-114x114.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-114x114.png",
+      "size": 8142,
+      "hash": "b2bdde8c121e0ee1e756f902097dd46f4d0b55d5"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-120x120.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-120x120.png",
+      "size": 8876,
+      "hash": "667ef090119910aca2d6c7799466008b8b9d4752"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-144x144.png",
+      "size": 11129,
+      "hash": "60e835a5cdc8b1471f32c91539e2885c3de4e95b"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-152x152.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-152x152.png",
+      "size": 11804,
+      "hash": "a9d7d4ad94998c2958043425b2b57d4c2b4d995a"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-180x180.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-180x180.png",
+      "size": 14415,
+      "hash": "7abd8741f8d2779ebded7db2b404efcc425eaa65"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-57x57.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-57x57.png",
+      "size": 3193,
+      "hash": "a3c72a112aea1f27dc4617ab8e4a108ba9b20a46"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-60x60.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-60x60.png",
+      "size": 3414,
+      "hash": "1c659dfecd21a19d8a2e5d6e77096050a65bf9e4"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-72x72.png",
+      "size": 4405,
+      "hash": "470e1d59f429511e9a56f6b8fd863ee981e203fb"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-76x76.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-76x76.png",
+      "size": 4814,
+      "hash": "fb1e1dad9d2f4509d7c211731a00d86c7ac3d6d9"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon-precomposed.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon-precomposed.png",
+      "size": 19606,
+      "hash": "7884dfdb67603ce560a6f4fec8c35937cdfc6f9c"
+    },
+    {
+      "path": "app/favicons/apple-touch-icon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/apple-touch-icon.png",
+      "size": 14415,
+      "hash": "7abd8741f8d2779ebded7db2b404efcc425eaa65"
+    },
+    {
+      "path": "app/favicons/browserconfig.xml",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/browserconfig.xml",
+      "size": 423,
+      "hash": "180ed3030bf67a3311f9cee2e48ae049c3e06580"
+    },
+    {
+      "path": "app/favicons/favicon-16x16.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/favicon-16x16.png",
+      "size": 609,
+      "hash": "698f2dfbf6f503d2e285b682e473456acf41b7ce"
+    },
+    {
+      "path": "app/favicons/favicon-194x194.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/favicon-194x194.png",
+      "size": 16138,
+      "hash": "d3879bd6dc5dd86c0cd2315ec53d239da19c4585"
+    },
+    {
+      "path": "app/favicons/favicon-32x32.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/favicon-32x32.png",
+      "size": 1335,
+      "hash": "ccaf2f5fa577e549a5c07d995d448bd4608e3f1f"
+    },
+    {
+      "path": "app/favicons/favicon-96x96.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/favicon-96x96.png",
+      "size": 6069,
+      "hash": "64fcd0a2b3c1a4036f54abd2d9210e8ea6113226"
+    },
+    {
+      "path": "app/favicons/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/favicon.ico",
+      "size": 15086,
+      "hash": "f3fdc2875d86541a2cd27cfc4b4d7b3264b887bb"
+    },
+    {
+      "path": "app/favicons/manifest.json",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/manifest.json",
+      "size": 798,
+      "hash": "f09673e9822625701c9ca522e398969455079a56"
+    },
+    {
+      "path": "app/favicons/mstile-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/mstile-144x144.png",
+      "size": 10057,
+      "hash": "b9198dddf1a5b944cb446438bb02f8e547a3b227"
+    },
+    {
+      "path": "app/favicons/mstile-150x150.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/mstile-150x150.png",
+      "size": 9183,
+      "hash": "258257678099abcb477746785ea64a57430cd6a3"
+    },
+    {
+      "path": "app/favicons/mstile-310x150.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/mstile-310x150.png",
+      "size": 9629,
+      "hash": "32d0ca3d7a1e3ef6f71bee2b19b316a3d9263809"
+    },
+    {
+      "path": "app/favicons/mstile-310x310.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/mstile-310x310.png",
+      "size": 24628,
+      "hash": "81255f55081aa099c1541ba71f55a6928ad202e4"
+    },
+    {
+      "path": "app/favicons/mstile-70x70.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicons/mstile-70x70.png",
+      "size": 5929,
+      "hash": "dd67b50ae3ec7af43afb8a8a858545f8ea22ece2"
+    },
+    {
+      "path": "app/resources/accessories/battery-bacpac.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/battery-bacpac.jpg",
+      "size": 18587,
+      "hash": "d50cb4c9614d1f4655d7c793d5d8945cf124eef1"
+    },
+    {
+      "path": "app/resources/accessories/frame.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/frame.jpg",
+      "size": 23073,
+      "hash": "4988fe5b7be52388d0e123172b788312a4908ba0"
+    },
+    {
+      "path": "app/resources/accessories/gopro_wifi_bacpac.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/gopro_wifi_bacpac.jpg",
+      "size": 13481,
+      "hash": "22d1c49d2207e6caee7f86bf8c53525a9e6565e1"
+    },
+    {
+      "path": "app/resources/accessories/gp2Battery.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/gp2Battery.jpg",
+      "size": 23460,
+      "hash": "2a8fb3cee420099f0ea0b32abef392bd8d0b0d88"
+    },
+    {
+      "path": "app/resources/accessories/hero3Battery.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/hero3Battery.jpg",
+      "size": 15950,
+      "hash": "2c681c42a27681bed5ff3b1c415ad718db43bd3d"
+    },
+    {
+      "path": "app/resources/accessories/touchBacCam.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/touchBacCam.jpg",
+      "size": 26692,
+      "hash": "fdd032ec5c57379693afe0fa6893924a6dcd6a19"
+    },
+    {
+      "path": "app/resources/accessories/touchBacPac.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/touchBacPac.jpg",
+      "size": 18041,
+      "hash": "1e0e830f7f0751588c3f5b5b8c1d58ea54a8e981"
+    },
+    {
+      "path": "app/resources/accessories/wifi-bacpac.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/accessories/wifi-bacpac.jpg",
+      "size": 17185,
+      "hash": "fa853c1964266aa9ef9efe007e6e88c158fb9af2"
+    },
+    {
+      "path": "app/resources/background/GearIn-Up_logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/background/GearIn-Up_logo.png",
+      "size": 74024,
+      "hash": "d4c0d17285b6ccf5072d6fa6ca3f6bc1ecd48659"
+    },
+    {
+      "path": "app/resources/background/blue_background.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/background/blue_background.png",
+      "size": 6846,
+      "hash": "7e5b019270149da20b6f8bd8d09eedbb68cc64a6"
+    },
+    {
+      "path": "app/resources/background/mtns.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/background/mtns.jpg",
+      "size": 167945,
+      "hash": "a6c38d431bd4554be3346a56c5cda8218f91d1ec"
+    },
+    {
+      "path": "app/resources/cameras/hero2.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/cameras/hero2.jpg",
+      "size": 21223,
+      "hash": "85611507c8820ae54efcd3337dd739f63909dac4"
+    },
+    {
+      "path": "app/resources/cameras/hero3-silver.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/cameras/hero3-silver.jpg",
+      "size": 71388,
+      "hash": "484d98f4bf1f85218a751472131026f777f06a26"
+    },
+    {
+      "path": "app/resources/cameras/hero3.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/cameras/hero3.jpg",
+      "size": 26221,
+      "hash": "ee36e2374b99da92f69b22f0fe98077c23dbcb2e"
+    },
+    {
+      "path": "app/resources/cameras/hero3black.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/cameras/hero3black.jpg",
+      "size": 147405,
+      "hash": "69e71baea10a81baf25ae649fc1133caa7f9d4f3"
+    },
+    {
+      "path": "app/resources/videos/kayak.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/videos/kayak.mp4",
+      "size": 8713549,
+      "hash": "5acf28b18fb435bb491ce17ceda4255b949f68ac"
+    },
+    {
+      "path": "app/resources/videos/kayak.webm",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/resources/videos/kayak.webm",
+      "size": 5182685,
+      "hash": "217a80335288b5f0ec2acd60da8c89a734810d0b"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "0e1bcd39ce6e012811d5278a07424f7cf8097580"
+    }
+  ]
+}

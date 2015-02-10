@@ -1,0 +1,12 @@
+@media (max-device-width: 768px) { 
+    video#bgvid {
+		display: none;
+	}
+	html, body{
+		background: url("resources/background/mtns.jpg");
+		background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top left;
+    background-size: cover; 
+	}
+}
